@@ -135,6 +135,18 @@ USE_TZ = True
 USE_I18N = True
 
 
+import os
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'   # collectstatic ke liye ye path
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+
+
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [BASE_DIR / "core/static"]
