@@ -150,11 +150,15 @@ import os
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Collected static files yahan jayenge
+STATIC_ROOT = '/home/ubuntu/campusforce/staticfiles'
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Uploaded images yahan rahenge
 
 
+MEDIA_ROOT = '/home/ubuntu/campusforce/media'
+MEDIA_URL = '/media/'
 
 
 STATIC_URL = '/static/'
